@@ -1,0 +1,12 @@
+
+body {
+    background-image: url(../background/tandem.JPG);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+

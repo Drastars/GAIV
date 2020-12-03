@@ -1,0 +1,9 @@
+body {
+    background-image: url(../../images/harry-cunningham-25BbC_4Z--I-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
