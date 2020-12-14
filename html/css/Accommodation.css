@@ -1,47 +1,112 @@
-
-body { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-
-
-
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111; 
-  overflow-x: hidden;
-  padding-top: 20px;
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /*background: #000;*    */
 }
-
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+    
 }
-
-
-.sidenav a:hover {
-  color: #f1f1f1;
+.container .column{
+    width: 25%;
+    height: 100%;
+    float: left;
+    border: 2px solid rgba(0,0,0,.5);
+    box-sizing: border-box;
+    z-index: 1;
+    
+    
+    
 }
-
-
-.main {
-  margin-left: 160px; 
-  padding: 0px 10px;
+.container .column:last-child{
+    border-right: none;
 }
-
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.container .column .content{
+    position: relative;
+    height: 100%;
+    
+}
+.container .column .content h1{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    background: rgba(0,0,0,.1);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: rgba(255,255,255,.2);
+    font-size: 15em;
+    border-top: 2px solid rgba(0,0,0,.5);
+    border-bottom: 2px solid rgba(0,0,0,.5);
+        
+}
+.container .column .content .box{
+    position: absolute;
+    top:50%;
+    transform:translateY(100%);
+    box-sizing: border-box;
+    padding: 40px;
+    background: rgba(255,255,255,1);
+    text-align: center;
+    transition: 0.5s
+    opacity: 0;
+    
+}
+.container .column.active .content .box{
+    opacity:1px;
+    transform:translateY(-50%);
+    
+}
+.container .column .content .box h2{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color: #262626;
+}
+.container .column .content .box p{
+    color: #262626;
+    font-size: 18px;
+}
+.container .column.active .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events:none;
+    z-index: -1;
+        
+}
+.container .column.active .bg.bg1{
+    background: url(../../images/harry-cunningham-25BbC_4Z--I-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 0.5s
+}
+.container .column.active .bg.bg2{
+    background: url(../../images/sergey-pakhomov-8ZYkjNarn5s-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 0.5s
+}
+.container .column.active .bg.bg3{
+    background: url(../../images/morteza-f-shojaei-AoVNMm1pzh0-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 0.5s
+}
+.container .column.active .bg.bg4{
+    background: url(../../images/mitchel-wijt-k-iOMxymRkw-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 0.5s
 }

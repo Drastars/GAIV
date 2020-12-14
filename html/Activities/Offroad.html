@@ -1,35 +1,42 @@
+<!--PAGE BY ALEXANDROS RETSIS-->
 <!doctype html>
 
 <html>
-<title>Site Maintenance</title>
-<style>
-    body { text-align: center; padding: 150px;
-        background-image: url(../../images/harry-cunningham-25BbC_4Z--I-unsplash.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        margin: 0;
-        font-family: Century Gothic;
-
-
-    }
-    .button{
-        color:black;
-        background-color: darkslategrey;
-    }
-    h1 { font-size: 50px; }
-    body { font: 20px Helvetica, sans-serif; color: #333; }
-    article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-    a { color: #dc8100; text-decoration: none; }
-    a:hover { color: #333; text-decoration: none; }
-</style>
-
-<article>
-    <h1>Coming Soon! Greek Island Adventurous Vacations</h1>
-    <div>
-        <p>Offroad page under Construction <a href='../../index.html'><button class="button">Back to home</button></a></p>
-        <p>&mdash; The Team</p>
-    </div>
-</article>
-    </html>
+    <head>
+        <title>Offroad</title>
+        <link rel="stylesheet" type="text/css" href="../css/Offroad.css">
+        
+    </head>
+    <body>
+        <section>
+            <img src="../../images/bg.jpg" id="bg">
+            <img src="../../images/moon.png" id="moon">
+            <img src="../../images/road.png" id="road">
+            <h2 id="text">ATV</h2>
+        
+        
+        
+        </section>
+        <script type="text/javascript">
+            let bg = document.getElementById("bg");
+            let moon = document.getElementById("moon");
+            let road = document.getElementById("road");
+            let text = document.getElementById("text");
+            
+            window.addEventListener('scroll', function(){
+                var value = window.scrollY;
+                bg.style.top = value * 0.5 + 'px';
+                moon.style.left = value * 0.5 + 'px';
+                road.style.top = value * 0.15 + 'px';
+                text.style.top = value * 0.5 + 'px';
+                
+            })
+            
+        
+        </script>
+    
+    
+    
+    
+    </body>
+</html>
