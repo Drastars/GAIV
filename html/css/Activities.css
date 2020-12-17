@@ -1,7 +1,8 @@
+/*BY RETSIS ALEXANDROS*/
 *{
     margin:0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: Century gothic;
     
 }
 body{
@@ -10,7 +11,7 @@ body{
     align-items: center;
     background: #16384c;
 /*    under this different background*/
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../images/elizeu-dias-RN6ts8IZ4_0-unsplash.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../images/jeep.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -33,13 +34,14 @@ body{
     position: relative;
     max-width: 300px;
     height: 215px;
-    background: #fff;
+    background: #ea9b67;
     margin: 30px 10px;
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     transition: 0.3s ease-in-out;
+    
         
 }
 .container .card:hover{
@@ -76,4 +78,51 @@ body{
     opacity: 1;
     margin-top: -40px;
     transition-delay: 0.3s;
+}
+/*might remove*/
+#text{
+    position: relative;
+    color: #fff;
+    font-size: 10em;
+    z-index: 1;
+}
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #000;
+    text-decoration:none;
+    transition: 0.6s ease;
+     font-family: Century Gothic;
+    background-color: #fff;
+    
+}
+.btn:hover{
+    background-color: transparent;
+    color: #fff;
+         font-family: Century Gothic;
+    
+}
+.btn {
+    
+    margin-bottom: -713px;
+    margin-left: 50
+}
+
+header{
+    height:100vh;
+    background-size: cover;
+    
+}
+
+ul li{
+    display: inline-block;
+    
+}
+.btn{
+    float:left;
+    width:150px;
+    height:auto;
+    display: flex;
+    
+    
 }

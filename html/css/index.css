@@ -1,3 +1,4 @@
+/*BY RETSIS ALEXANDROS*/
 /*
 *{
 margin: 0;
@@ -261,6 +262,7 @@ nav{
     top: 0;
     left:160%;
 }
+/* REMOVING SUB LIST!
 .nav-list li:hover > .sub-menu{
     top: 8rem;
     opacity:1;
@@ -274,6 +276,7 @@ nav{
 
 
 }
+*/
 li.move-right{
     margin: auto 0 auto auto;
     line-height: initial;
@@ -382,4 +385,33 @@ li.move-right{
 }
 
 */
+.buttonindex{
+    position:absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Century Gothic;
+    
+    
+}
+.btnindex{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration:none;
+    transition: 0.6s ease;
+     font-family: Century Gothic;
+}
+.btnindex:hover{
+    background-color: #fff;
+    color: #000;
+         font-family: Century Gothic;
+}
+h1{
+    color: #ffff;
+}
+
+p{
+    color: #ffff;
+}
 

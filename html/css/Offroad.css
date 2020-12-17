@@ -1,13 +1,15 @@
+/*!--PAGE BY ALEXANDROS RETSIS--*/
 *{
     margin: 0;
     padding: 0;
-    font-family:'Poppins', sans-serif
+/*    font-family:'Poppins', sans-serif*/
+    font-family:Century Gothic;
 }
 body{
     background: #0a2a43;
     min-height: 1500px;
 }
-section{
+.off{
     position: relative;
     width: 100%;
     height: 100vh;
@@ -16,7 +18,7 @@ section{
     justify-content: center;
     align-content: center;
 }
-section:before{
+.off:before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -28,7 +30,7 @@ section:before{
     
     
 }
-section:after{
+.off:after{
     content: '';
     position:absolute;
     top:0;
@@ -37,12 +39,13 @@ section:after{
     height: 100%;
     background: #0a2a43;
     z-index: 10000;
-    mix-blend-mode: color;
+    mix-blend-mode: soft-light;
+/*    need to mess around with mix-blend-mode more to find best setting*/
     
     
     
 }
-section img{
+.off img{
     position: absolute;
     top: 0;
     left: 0;
@@ -60,4 +63,86 @@ section img{
 }
 #road{
     z-index: 1;
+}
+.ok{
+    padding: 0 100px;
+    background: url(../../images/jeep1.jpg);
+    background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    flex-direction: row-reverse;
+}
+
+.box{
+    position:relative;
+    max-width: 600px;
+    padding:50px;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    
+}
+.box h2{
+    margin: 0 0 20px;
+    padding: 0;
+    font-size:48px;
+    text-transform: uppercase;
+    color: black
+}
+.box p{
+    margin: 0;
+    padding: 0;
+    font-size:18px;
+    text-transform: uppercase;
+    color: black;
+}
+a {
+  background-color: gold;
+  box-shadow: 0 5px 0 darkgoldenrod;
+  color: white;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+    
+}
+
+a:hover {
+  background-color: darkgoldenrod;
+    
+}
+
+a:active {
+  box-shadow: none;
+  top: 5px;
+    
+}
+/*
+.hm{
+    margin-left: 10px;
+}
+*/
+
+/*FOR OTHER BUTTONS*/
+
+ .hmbtn {
+  background-color: red;
+  box-shadow: 0 5px 0 darkred;
+  color: white;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hmbtn:hover {
+  background-color: #ce0606;
+}
+
+.hmbtn:active {
+  box-shadow: none;
+  top: 5px;
 }
