@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://github.com/Drastars/GAIV/blob/main/images/elizeu-dias-RN6ts8IZ4_0-unsplash1.jpg);
+    background: url(../../images/elizeu-dias-RN6ts8IZ4_0-unsplash1.jpg);
+     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../images/elizeu-dias-RN6ts8IZ4_0-unsplash1.jpg);
                 background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;

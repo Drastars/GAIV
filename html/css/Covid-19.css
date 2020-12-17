@@ -1,4 +1,4 @@
-  h1{
+h1{
              color:aqua;
       text-align: center;
             }
@@ -43,5 +43,35 @@ body{
 }
 .jigger{
     overflow:hidden;
+    text-align: center;
+    color:aqua;
     
+}
+nav{
+    background:#594849;
+    width:100%;
+    overflow:auto;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+li{
+    float: left;
+}
+nav a{
+    width:120px;
+    display:block;
+    text-decoration: none;
+    text-align: center;
+       background:#594849;
+    font-size:17px;
+    color:blue;
+    padding:20px 10px;
+    font-family: Arial;
+}
+nav a:hover{
+    background: skyblue;
+    color:black;
 }
