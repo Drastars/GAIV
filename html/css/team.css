@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(elizeu-dias-RN6ts8IZ4_0-unsplash1.jpg);
+     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://github.com/Drastars/GAIV/blob/main/images/elizeu-dias-RN6ts8IZ4_0-unsplash1.jpg);
                 background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -62,4 +62,32 @@ body{
     width:100px;
     height: 100px;
     
+}
+nav{
+    background:#594849;
+    width:100%;
+    overflow:auto;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+li{
+    float: left;
+}
+nav a{
+    width:120px;
+    display:block;
+    text-decoration: none;
+    text-align: center;
+       background:#594849;
+    font-size:17px;
+    color:blue;
+    padding:20px 10px;
+    font-family: Arial;
+}
+nav a:hover{
+    background: skyblue;
+    color:black;
 }
