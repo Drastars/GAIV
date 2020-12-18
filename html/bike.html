@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Dirt Bikes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {font-family: "Lato", sans-serif}
+        .mySlides {display: none}
+        a {
+            background-color: red;
+            box-shadow: 0 5px 0 darkred;
+            color: white;
+            padding: 1em 1.5em;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            background-color: #ce0606;
+        }
+
+        a:active {
+            box-shadow: none;
+            top: 5px;
+        }
+    </style>
+    <body>
+
+        <!-- Page content -->
+        <div class="w3-content" style="max-width:2000px;">
+
+            <Slideshow>
+                <div class="mySlides w3-display-container w3-center">
+                    <img src="https://www.mxstore.com.au/assets/images/Fasthouse%20Darryn%20Durham%20MX%20Gear%20Banner.jpg" style="width:100%">
+                    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                        <h3>Dirt Bike tours</h3>
+                        <p><b>The best Dirt Bike Tours in Greece</b></p>  
+                    </div>
+                </div>
+                <div class="mySlides w3-display-container w3-center">
+                    <img src="https://www.ghmotorcycles.co.uk/wp-content/uploads/2015/12/HUSQVARNA-MX-BANNER.jpg" style="width:100%">
+                    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                        <h3>Dirt Bike tours</h3>
+                        <p><b>The best Dirt Bike Tours in Greece</b></p>   
+                    </div>
+                </div>
+
+                <!-- The Info Section -->
+                <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+                    <h2 class="w3-wide">Info</h2>
+                    <p class="w3-justify">We offer the best Dirt Bike tours you'll find in Greece.Explore the countryside and the islands,off-road next to local experts who will make sure you'll stay stafe and have the best experience! We offer the safest vehicles of the market!  We'll pick you up from your accomondation and drive you to the starting spot where you'll spend 15 minutes learning the do's and dont's of car driving. You <strong>MUST</strong> have <strong>driver's license</strong> and <strong>insurance</strong> or you won't be allowed to participate</p>
+                    <h2>Locations</h2>
+                    <div class="w3-row w3-padding-32">
+                        <div class="w3-third">
+                            <p>Athens</p>
+                            <img src="https://i.pinimg.com/originals/20/79/b2/2079b2576c8d434bc37c124164507727.jpg" class="w3-round" style="width:80%">
+                        </div>
+                        <div class="w3-third">
+                            <p>Santorini</p>
+                            <img src="https://i.pinimg.com/originals/b5/76/37/b576375406e92928360d36ea593296e8.jpg"style="width:80%">
+                        </div>
+                        <div class="w3-third">
+                            <p>Ioanina</p>
+                            <img src="https://www.pilotcycles.com/wp-content/uploads/2019/02/heart-to-beat-25.25-Pilot-cycles-gravel-road-by-bicycle-titanium-trekking-bike.jpg" class="w3-round"style="width:80%">
+                        </div>
+                    </div>
+                    <script>
+                        // Automatic Slideshow - change image every 4 seconds
+                        var myIndex = 0;
+                        carousel();
+
+                        function carousel() {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";  
+                            }
+                            myIndex++;
+                            if (myIndex > x.length) {myIndex = 1}    
+                            x[myIndex-1].style.display = "block";  
+                            setTimeout(carousel, 4000);    
+                        }
+                    </script>
+                    <a href="../Activities/Activities.html"><b>Return to Activities</b></a>
+                    <a href="../../index.html"><b>Return to home</b></a>
+
+                    </body>
+                </html>

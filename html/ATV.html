@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>ATV Tours</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {font-family: "Lato", sans-serif}
+        .mySlides {display: none}
+        a {
+            background-color: red;
+            box-shadow: 0 5px 0 darkred;
+            color: white;
+            padding: 1em 1.5em;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            background-color: #ce0606;
+        }
+
+        a:active {
+            box-shadow: none;
+            top: 5px;
+        }
+    </style>
+    <body>
+
+        <!-- Page content -->
+        <div class="w3-content" style="max-width:2000px;">
+
+            <Slideshow>
+                <div class="mySlides w3-display-container w3-center">
+                    <img src="https://www.summitbsa.org/wp-content/uploads/2018/01/Atv-Banner.jpg" style="width:100%">
+                    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                        <h3>ATV Tours</h3>
+                        <p><b>The best ATV Tours in Greece</b></p>   
+                    </div>
+                </div>
+                <div class="mySlides w3-display-container w3-center">
+                    <img src="https://rvam.co.uk/wp-content/myimages/sportsman-400-ho-banner-min-1.jpg" style="width:100%">
+                    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                        <h3>ATV Tours</h3>
+                        <p><b>The best ATV Tours in Greece</b></p>   
+                    </div>
+                </div>
+
+                <!-- The Info Section -->
+                <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+                    <h2 class="w3-wide">Info</h2>
+                    <p class="w3-justify">We offer the best ATV tours you'll find in Greece.Explore the countryside and the islands,off-road next to local experts who will make sure you'll stay stafe and have the best experience! We offer the safest vehicles of the market!  We'll pick you up from your accomondation and drive you to the starting spot where you'll spend 15 minutes learning the do's and dont's of ATV driving. You <strong>MUST</strong> have <strong>driver's license</strong> and <strong>insurance</strong> or you won't be allowed to participate</p>
+                    <h2>Locations</h2>
+                    <div class="w3-row w3-padding-32">
+                        <div class="w3-third">
+                            <p>Athens</p>
+                            <img src="https://2.bp.blogspot.com/-sjXFWl7fxI4/Vdx-o_mXRHI/AAAAAAAAB48/hotvi3a4eSg/s1600/IMG_5011.JPG" class="w3-round" style="width:80%">
+                        </div>
+                        <div class="w3-third">
+                            <p>Santorini</p>
+                            <img src="https://3.bp.blogspot.com/-3meIHnjgg4Q/WbmFKOlOToI/AAAAAAAAEhM/MJI8DqDHE-QNsSk3MJtc3I4RtUrgDaTBACLcBGAs/s1600/Photo%2B26-08-2017%252C%2B11%2B46%2B58%2Bam.jpg" class="w3-round" style="width:80%">
+                        </div>
+                        <div class="w3-third">
+                            <p>Mykonos</p>
+                            <img src="https://www.marianbacoluba.com/wp-content/uploads/2017/10/IMG_3213.jpg" class="w3-round" style="width:80%">
+                        </div>
+                        <div class="w3-third">
+                            <p>Crete</p>
+                            <img src="https://excursions.direct/wp-content/uploads/2018/02/quadsafari4565_1200x1600.jpg"style="width:80%">
+                        </div>
+                        <div class="w3-third">
+                            <p>Ioanina</p>
+                            <img src="https://www.mhtravelcorfu.com/wp-content/uploads/2017/03/IMG_3426.jpg" class="w3-round"style="width:80%">
+                        </div>
+                    </div>
+                    <script>
+                        // Automatic Slideshow - change image every 4 seconds
+                        var myIndex = 0;
+                        carousel();
+
+                        function carousel() {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";  
+                            }
+                            myIndex++;
+                            if (myIndex > x.length) {myIndex = 1}    
+                            x[myIndex-1].style.display = "block";  
+                            setTimeout(carousel, 4000);    
+                        }
+                    </script>
+                    <a href="../Activities/Activities.html"><b>Return to Activities</b></a>
+                    <a href="../../index.html"><b>Return to home</b></a>
+
+                    </body>
+                </html>
