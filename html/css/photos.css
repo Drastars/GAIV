@@ -3,8 +3,8 @@
 } 
 body{
               background:sans-serif;
-    background-image: url(elizeu-dias-RN6ts8IZ4_0-unsplash1.jpg);
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(elizeu-dias-RN6ts8IZ4_0-unsplash1.jpg);   
+    background: url(../../images/elizeu-dias-RN6ts8IZ4_0-unsplash1.jpg);
+     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../images/elizeu-dias-RN6ts8IZ4_0-unsplash1.jpg);   
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
