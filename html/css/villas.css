@@ -6,7 +6,7 @@
 .container{
 	width: 100%;
 	height: 100vh;
-	background: url(dark.jpg) no-repeat;
+	background: url(../../images/dark.jpg) no-repeat;
 	background-size:cover;
 	height: 100vh;
 	padding left: 9%;
@@ -79,19 +79,19 @@ transition: transform 0.5;
 font size: 8px;
 }
 .card1{
-	background-image: url(luxury.jpg);
+	background-image: url(../../images/luxury.jpg);
 }
 .card2{
-	background-image: url(old.jpg);
+	background-image: url(../../images/old.jpg);
 }
 .card3{
-	background-image: url(modern.jpg);
+	background-image: url(../../images/modern.jpg);
 }
 .card4{
-	background-image: url(Villa-png.jpg);
+	background-image: url(../../images/Villa-png.jpg);
 }
 .card4{
-	background-image: url(seaview-png.jpg);
+	background-image: url(../../images/seaview-png.jpg);
 }
 .card:hover{
 	transform: translateY(-10px);

@@ -6,7 +6,7 @@
 .container{
 	width: 100%;
 	height: 100vh;
-	background: url(Athens-img.jpg) no-repeat;
+	background: url(../../images/Athens-img.jpg) no-repeat;
 	background-size:cover;
 	height: 100vh;
 	padding left: 9%;
@@ -79,16 +79,16 @@ transition: transform 0.5;
 font size: 8px;
 }
 .card1{
-	background-image: url(kn-img.jpg);
+	background-image: url(../../images/kn-img.jpg);
 }
 .card2{
-	background-image: url(gh-img.jpg);
+	background-image: url(../../images/gh-img.jpg);
 }
 .card3{
-	background-image: url(gb-img.jpg);
+	background-image: url(../../images/gb-img.jpg);
 }
 .card4{
-	background-image: url(ht-img.jpg);
+	background-image: url(../../images/ht-img.jpg);
 }
 .card:hover{
 	transform: translateY(-10px);
