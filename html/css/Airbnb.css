@@ -6,7 +6,7 @@
 .container{
 	width: 100%;
 	height: 100vh;
-	background: url(Underwood.jpg) no-repeat;
+	background: url(Airbnb.jpg) no-repeat;
 	background-size:cover;
 	height: 100vh;
 	padding left: 9%;
@@ -50,8 +50,8 @@ h1{
 }
 p{
 	color:#fff;
-	font size: 30%;
-	line-height:27px;
+	font size: 17%;
+	line-height:30px;
 }
 button{
 	width: 180px;
@@ -79,16 +79,13 @@ transition: transform 0.5;
 font size: 8px;
 }
 .card1{
-	background-image: url(MeteoraMonastery.jpg);
+	background-image: url(oldschoolapr.jpg);
 }
 .card2{
-	background-image: url(Ruinsofdelphi.jpg);
+	background-image: url(modernapr.jpg);
 }
 .card3{
-	background-image: url(Acropolis.jpg);
-}
-.card4{
-	background-image: url(shipwreckbay.jpg);
+	background-image: url(cave.jpg);
 }
 .card:hover{
 	transform: translateY(-10px);
