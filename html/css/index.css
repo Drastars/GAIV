@@ -1,11 +1,12 @@
 /*BY RETSIS ALEXANDROS*/
 /*
-*{
+*{ Arial, Helvetica, sans-serif
 margin: 0;
 padding: 0;
 font-family: Century Gothic;
 }
 */
+
 
 body {
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../images/elizeu-dias-RN6ts8IZ4_0-unsplash.jpg);
@@ -14,7 +15,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Century Gothic;;
 }
 header{
     height: 96.5vh;

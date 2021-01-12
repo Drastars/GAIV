@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-/*    font-family:'Poppins', sans-serif*/
+    /*    font-family:'Poppins', sans-serif*/
     font-family:Century Gothic;
 }
 body{
@@ -26,9 +26,9 @@ body{
     height: 100px;
     background: linear-gradient(to top, #0a2a43, transparent);
     z-index: 10000;
-    
-    
-    
+
+
+
 }
 .off:after{
     content: '';
@@ -40,10 +40,10 @@ body{
     background: #0a2a43;
     z-index: 10000;
     mix-blend-mode: soft-light;
-/*    need to mess around with mix-blend-mode more to find best setting*/
-    
-    
-    
+    /*    need to mess around with mix-blend-mode more to find best setting*/
+
+
+
 }
 .off img{
     position: absolute;
@@ -53,7 +53,7 @@ body{
     height: 100%;
     object-fit: cover;
     pointer-events: none;
-    
+
 }
 #text{
     position: relative;
@@ -68,9 +68,9 @@ body{
     padding: 0 100px;
     background: url(../../images/jeep1.jpg);
     background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     height: 100vh;
     display: flex;
     align-items:center;
@@ -83,7 +83,7 @@ body{
     padding:50px;
     background: rgba(255,255,255,.2);
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    
+
 }
 .box h2{
     margin: 0 0 20px;
@@ -100,49 +100,140 @@ body{
     color: black;
 }
 a {
-  background-color: gold;
-  box-shadow: 0 5px 0 darkgoldenrod;
-  color: white;
-  padding: 1em 1.5em;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-    
+    background-color: gold;
+    box-shadow: 0 5px 0 darkgoldenrod;
+    color: white;
+    padding: 1em 1.5em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+
 }
 
 a:hover {
-  background-color: darkgoldenrod;
-    
+    background-color: darkgoldenrod;
+
 }
 
 a:active {
-  box-shadow: none;
-  top: 5px;
-    
+    box-shadow: none;
+    top: 5px;
+
 }
 /*
 .hm{
-    margin-left: 10px;
+margin-left: 10px;
 }
 */
 
 /*FOR OTHER BUTTONS*/
 
- .hmbtn {
-  background-color: red;
-  box-shadow: 0 5px 0 darkred;
-  color: white;
-  padding: 1em 1.5em;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
+.hmbtn {
+    background-color: red;
+    box-shadow: 0 5px 0 darkred;
+    color: white;
+
+    position: absolute;
+    /*  bottom:-10%;*/
+
+    left: 9%;
+    bottom:-97%;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+
 }
 
 .hmbtn:hover {
-  background-color: #ce0606;
+    background-color: #ce0606;
 }
 
 .hmbtn:active {
-  box-shadow: none;
-  top: 5px;
+    box-shadow: none;
+    top: 191%;
+}
+
+.hmbtn1 {
+    background-color: red;
+    opacity: 1;
+    box-shadow: 0 5px 0 darkred;
+    color: white;
+    position: absolute;
+
+    left:01%;
+    bottom:-97%;
+
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.hmbtn1:hover {
+    background-color: #ce0606;
+}
+
+.hmbtn1:active {
+    box-shadow: none;
+    top: 191%;
+}
+/* SCROLL DOWN INDICATOR */
+.scrolldown{
+    position: absolute;
+    bottom:800px;
+    left:50%;
+    width:40px;
+    height:40px;
+    transform:translateY(80px) translateX(-50%)
+        rotate(45deg);
+}
+.scrolldown span
+{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    animation: animate 1.5s linear infinite;
+    opacity:0;
+}
+.scrolldown span:nth-child(1)
+{
+    transform: translate(-15px, -15px);
+    animation-delay: -0.4s;
+}
+
+.scrolldown span:nth-child(2){
+    transform: translate(0px,0px);
+    animation-delay: -0.2s;
+
+}
+.scrolldown span:nth-child(3){
+    transform: translate(15px,15px);
+    animation-delay: 0s;
+
+}
+@keyframes animate{
+    0%
+    {
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+    }
+    25%{
+    
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    }
+    100%
+    {
+        top: 5px;
+        left: 5px;
+        opacity:0;
+    }
 }
