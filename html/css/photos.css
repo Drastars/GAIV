@@ -48,8 +48,8 @@ h1 {
 .gallery{
     margin:10px 500px;
     border:1px solid #ccc;
-    float:left;
-    width:390px;
+    float:center;
+    width:340px;
 }
 .gallery img{
     width:100%;
@@ -58,17 +58,10 @@ h1 {
     
 }
 
-
-.container{
-    max-width:1200px;
-    margin:auto;
-    background:#f2f2f2;
-    overflow:auto;
-}
 footer{
-    padding: 10px;
-    font-size:17px;
+    padding: 20px;
+    font-size:20px;
     text-align: center;
-    color:white;
+    color:black;
     font-family:Arial;
 }
